@@ -1,0 +1,28 @@
+https://1drv.ms/w/s!AlDRz9BQWvyTgRWfUVNAYEjMo_kb?e=QVjIg7     ------ this is the link to word format of the answer
+
+Sample input list: [ 8, 12, 15, 21, 45]
+1st step:  we have to sort the numbers since the binary search principle works upon sorted lists
+      [ 8, 12, 15, 21, 45] ---- is already sorted 
+Then we can head to the search as follows:
+
+
+      Sorted_nos= [ 8, 12, 15, 21, 45]
+      Target_no= 12
+Function { Binary_searcher(Sorted_nos, Target_no):
+    		 Middle_idx = length of (Sorted_nos)/2
+         		   If length of (Sorted_nos) is 1 or 0 THEN
+			return  Sorted_nos[0]
+  		   if   Target_no is Sorted_nos[Middle_idx]  THEN
+                    		 return  Sorted_nos[Middle_idx]
+  		  elif  Sorted_nos[Middle_idx] > Target_no  THEN
+			Binary_searcher(Sorted_nos[0 to Middle_idx])
+		  else THEN 
+			Binary_searcher(Sorted_nos[Middle_idx to last_idx])
+ }
+
+ 
+KEY TERMS USED:
+         Sorted_nos is the list of sorted numbers given in global environment.
+         Target_no  is the number we are finding in the list in divide and conquer mechanism.
+        Middle_idx is the middle index of the grand list or the sub lists, which are found during the recursion
+         Binary searcher is the function that is used recursively to find out the target number.
