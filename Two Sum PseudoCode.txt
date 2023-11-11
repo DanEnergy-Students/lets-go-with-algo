@@ -1,0 +1,12 @@
+nums = [2,7,11,15]
+target = 9
+loop for i from 0 to len(nums)
+    loop for j from 1 to len(nums)
+        sum = nums[i] + nums[j] 
+        if sum = target
+            print([i, j])
+            break
+        else
+            break
+    end loop
+end loop
