@@ -1,0 +1,17 @@
+Algorithm ExponentialSearch(L, n, target)
+   INPUT list L of n elements
+   INPUT target element to be found
+   OUTPUT index of element in L OR -1
+   blocksize ← 2
+   index ← -1
+   FOR i ← 0 TO n-1 DO
+      IF L[blocksize-1] <= target THEN
+         index ← LinearSearchRange(L, target, i, blocksize-1)
+      IF index >= 0 THEN
+         RETURN index
+      IF blocksize < n THEN
+         blocksize ← blocksize * blocksize
+      ELSE
+         RETURN -1
+
+written by meti tadesse
