@@ -1,3 +1,4 @@
+# Made by Amanuale Belete and King Teshome
 Counting sort works by counting the number of occurrences of each element and then placing them in their correct positions in the sorted array. It is efficient for arrays with a limited range of key values.
 Here is the pseudo code for this sorting algorithm
   countingSort(arr, n)
