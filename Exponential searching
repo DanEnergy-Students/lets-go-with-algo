@@ -1,0 +1,19 @@
+function exponentialSearch(arr, target):
+    if arr[0] == target:
+        return 0
+    i = 1
+    while i < len(arr) and arr[i] <= target:
+        i *= 2
+    return binarySearch(arr, i // 2, min(i, len(arr)), target)
+
+function binarySearch(arr, low, high, target):
+    # Standard binary search
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
