@@ -42,6 +42,6 @@ def reverse_list(names):
 
 
 # Example 
-name_list = ["Fetih", "Girma", "Einstein", "Adane", "Alazar"]
+name_list = ["King", "Samueal", "Daniel", "Biruk", "Abel"]
 reversed_list = reverse_list(name_list)
 print(reversed_list)
