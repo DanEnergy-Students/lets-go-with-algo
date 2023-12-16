@@ -1,0 +1,17 @@
+python
+# Given list of names
+names = ['Melat', 'John', 'Yeabnat', 'Sisay', 'Tikdem']
+
+# Setting up the pointers
+left, right = 0, len(names) - 1
+
+# Reversing the list
+while left < right:
+    # Swapping elements at left and right positions
+    names[left], names[right] = names[right], names[left]
+    # Moving the pointers
+    left += 1
+    right -= 1
+
+# Print the reversed list
+print(names)
